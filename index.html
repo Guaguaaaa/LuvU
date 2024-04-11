@@ -6,7 +6,9 @@
     <title>Home</title>
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link href="index.css" rel="stylesheet">
+    <script src="index.js"></script>
     <!--
     <style>
         /* 添加自定义样式以使导航栏在展开时显示在屏幕左侧 */
@@ -29,6 +31,7 @@
 </head>
 <body>
 
+<!-- Navigation bar -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="index.html">NavLogo</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,6 +56,7 @@
     </div>
 </nav>
 
+<!-- Header -->
 <div class="container mt-4">
     <h1>Hello, world!</h1>
     <p>This is a basic Bootstrap example.</p>
@@ -66,33 +70,19 @@
     </div>
 </section>
 
-<script>
-    const startDate = new Date('2023-04-20T20:43:00'); // Replace with your starting date and time
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-content">
+        <p>&copy; 2024 Your Love Story. All rights reserved.</p>
+        <div class="social-icons">
+            <!--TODO: change my social media link-->
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+</footer>
 
-    function updateTimer() {
-        const currentDate = new Date();
-        const difference = currentDate - startDate;
-        var days = Math.floor(difference / (1000 * 60 * 60 * 24));
-        var hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        var minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((difference % (1000 * 60)) / 1000);
-
-        if (hours < "10") { hours = "0" + hours; }
-        if (minutes < "10") { minutes = "0" + minutes; }
-        if (seconds < "10") { seconds = "0" + seconds; }
-
-        $("#days").html(days + "<span>Days</span>");
-        $("#hours").html(hours + "<span>Hours</span>");
-        $("#minutes").html(minutes + "<span>Minutes</span>");
-        $("#seconds").html(seconds + "<span>Seconds</span>");
-
-        //const timerElement = document.getElementById('timer');
-        //timerElement.innerHTML = `Duration: ${days} days, ${hours} hours, ${minutes} minutes, ${seconds} seconds`;
-    }
-
-    //setInterval(updateTimer, 1000);
-    setInterval(function() { updateTimer(); }, 1000);
-</script>
 
 <!-- Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
