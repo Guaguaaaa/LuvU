@@ -1,0 +1,55 @@
+<svg width="100%" height="100%" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" overflow="auto" shape-rendering="auto" fill="#ffffff">
+    <defs>
+        <!-- 定义波浪路径 -->
+        <!--450/481控制波长，数字越小波长越短-->
+        <path id="wavepath1" d="M 0 2000 0 500 Q 150 450 300 500 t 300 0 300 0 300 0 300 0 300 0  v1000 z" />
+        <path id="wavepath2" d="M 0 2000 0 500 Q 150 487 300 500 t 300 0 300 0 300 0 300 0 300 0  v1000 z" />
+        <path id="wavepath3" d="M 0 2000 0 500 Q 150 473 300 500 t 300 0 300 0 300 0 300 0 300 0  v1000 z" />
+        <path id="wavepath4" d="M 0 2000 0 500 Q 150 460 300 500 t 300 0 300 0 300 0 300 0 300 0  v1000 z" />
+        <!-- 定义运动路径 -->
+        <path id="motionpath" d="M -600 0 0 0" />
+        <linearGradient id="gradient" x1="0%" y1="50%" x2="100%" y2="50%">
+            <stop offset="5%" stop-color="#F78DA7"></stop>
+            <stop offset="95%" stop-color="#8ED1FC"></stop>
+        </linearGradient>
+    </defs>
+    <g>
+        <!-- 第一层波浪 -->
+        <!-- y控制高度/层数，数字越小越高-->
+        <!-- fill控制颜色，渐变则写url(#gradiant) -->
+        <!-- use中的opacity控制透明度 -->
+        <!-- 越往下写波浪层数越靠前 -->
+        <use href="#wavepath1" y="400" fill="#fff" opacity="0.3">
+            <!-- dur控制速度，数字越小速度越快 -->
+            <animateMotion
+                    dur="2s"
+                    repeatCount="indefinite">
+                <mpath href="#motionpath" />
+            </animateMotion>
+        </use>
+        <!-- 第二层波浪 -->
+        <use href="#wavepath2" y="400" fill="#fff" opacity="0.5">
+            <animateMotion
+                    dur="4s"
+                    repeatCount="indefinite">
+                <mpath href="#motionpath" />
+            </animateMotion>
+        </use>
+        <!-- 第三层波浪 -->
+        <use href="#wavepath4" y="400" fill="#fff" opacity="0.7">
+            <animateMotion
+                    dur="3s"
+                    repeatCount="indefinite">
+                <mpath href="#motionpath" />
+            </animateMotion>
+        </use>
+        <!-- 第四层波浪 -->
+        <use href="#wavepath3" y="400" fill="#fff">
+            <animateMotion
+                    dur="5s"
+                    repeatCount="indefinite">
+                <mpath href="#motionpath" />
+            </animateMotion>
+        </use>
+    </g>
+</svg>

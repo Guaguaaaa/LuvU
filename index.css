@@ -1,4 +1,85 @@
 @import url(https://fonts.googleapis.com/css?family=Covered+By+Your+Grace);
+@font-face {
+    font-family: 'ZCOOL Happy';
+    src: url('fonts/ZCOOLHappy.ttf') format('truetype');
+}
+
+header {
+    height: 50vh;
+    background-color: #66ccff;
+}
+
+.top-img-container {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+.avatar-container-1 img,
+.avatar-container-2 img{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.avatar-container-1,
+.avatar-container-2{
+    text-align: center;
+
+}
+
+.avatar-container-1 p,
+.avatar-container-2 p{
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
+    font-family: 'ZCOOL Happy', sans-serif;
+}
+
+.avatar-container-1{
+    position: absolute;
+    left: calc(50% - 50px - 100px);
+    transform: translateX(-50%);
+}
+
+.avatar-container-2{
+    position: absolute;
+    left: calc(50% + 50px + 100px);
+    transform: translateX(-50%);
+}
+
+.heart-img{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 30px;
+}
+
+.wave{
+    position: absolute;
+    bottom: 0;
+
+    width: 100%;
+    height: 400px;
+}
+/*
+.header-wave {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-image: url('svgs/wave.svg');
+    background-size: 100% 100%;
+    background-repeat: repeat-x;
+    z-index: -1;
+}*/
+
 
 /* Timer Section */
 #days {

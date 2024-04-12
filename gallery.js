@@ -12,7 +12,7 @@ galleryItems.forEach(item => {
         expandedImage.classList.add('open');  // Show the expanded image
 
         const closeButton = document.createElement('i');
-        closeButton.classList.add('fas', 'fa-times', 'close-button');  // Close button with Font Awesome
+        closeButton.classList.add('fas', 'fa-times', 'close-button');  // Close button with fonts Awesome
         closeButton.addEventListener('click', () => {
             expandedImage.classList.remove('open');
             expandedImage.innerHTML = '';  // Clear expanded image container
