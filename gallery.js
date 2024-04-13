@@ -1,28 +1,32 @@
-const galleryItems = document.querySelectorAll('.gallery-item');
-
-galleryItems.forEach(item => {
-    item.addEventListener('click', () => {
-        const img = item.querySelector('img');
-        const expandedImage = document.querySelector('.expanded-image');
-        const imageContainer = document.createElement('div');
-        imageContainer.classList.add('image-container');
-        imageContainer.appendChild(img.cloneNode(true));  // Clone image for expansion
-
-        expandedImage.appendChild(imageContainer);
-        expandedImage.classList.add('open');  // Show the expanded image
-
-        const closeButton = document.createElement('i');
-        closeButton.classList.add('fas', 'fa-times', 'close-button');  // Close button with fonts Awesome
-        closeButton.addEventListener('click', () => {
-            expandedImage.classList.remove('open');
-            expandedImage.innerHTML = '';  // Clear expanded image container
-        });
-
-        expandedImage.appendChild(closeButton);
+var gallery = document.querySelector('#gallery');
+var getVal = function (elem, style) { return parseInt(window.getComputedStyle(elem).getPropertyValue(style)); };
+var getHeight = function (item) { return item.querySelector('.content').getBoundingClientRect().height; };
+var resizeAll = function () {
+    var altura = getVal(gallery, 'grid-auto-rows');
+    var gap = getVal(gallery, 'grid-row-gap');
+    gallery.querySelectorAll('.gallery-item').forEach(function (item) {
+        var el = item;
+        el.style.gridRowEnd = "span " + Math.ceil((getHeight(item) + gap) / (altura + gap));
     });
+};
+gallery.querySelectorAll('img').forEach(function (item) {
+    item.classList.add('byebye');
+    if (item.complete) {
+        console.log(item.src);
+    }
+    else {
+        item.addEventListener('load', function () {
+            var altura = getVal(gallery, 'grid-auto-rows');
+            var gap = getVal(gallery, 'grid-row-gap');
+            var gitem = item.parentElement.parentElement;
+            gitem.style.gridRowEnd = "span " + Math.ceil((getHeight(gitem) + gap) / (altura + gap));
+            item.classList.remove('byebye');
+        });
+    }
 });
-
-document.addEventListener('DOMContentLoaded', function() { // Ensure DOM is loaded
-    const galleryItems = document.querySelectorAll('.gallery-item');
-    console.log('Gallery Items:', galleryItems); // Check if elements are found
+window.addEventListener('resize', resizeAll);
+gallery.querySelectorAll('.gallery-item').forEach(function (item) {
+    item.addEventListener('click', function () {
+        item.classList.toggle('full');
+    });
 });
