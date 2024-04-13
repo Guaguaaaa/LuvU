@@ -4,6 +4,10 @@
     font-family: 'ZCOOL Happy';
     src: url('fonts/ZCOOLHappy.ttf') format('truetype');
 }
+@font-face {
+    font-family: 'Motley Forces';
+    src: url('fonts/MotleyForcesRegular.ttf') format('truetype');
+}
 
 header {
     height: 50vh;
@@ -70,17 +74,17 @@ header {
 .container-main-title h1{
     text-align: center;
     padding-top: 10px;
-    color: #61bfad;
+    /*color: #61bfad;*/
 
     font-size:40px;
     font-family: "Shadows Into Light", cursive;
     /*400 - normal/regular --> 700 - bold*/
     font-weight: 700;
     font-style: normal;
-    /*
+
     background: linear-gradient(to right, #ebbba7, #cfc7f8);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;*/
+    -webkit-text-fill-color: transparent;
 }
 
 /* Timer Section */
@@ -126,6 +130,47 @@ header {
     justify-content: space-around;
     align-items: center;
     position: relative;
+}
+.page-links-container a {
+    color: black; /* 将文字颜色设置为黑色 */
+    text-decoration: none; /* 移除下划线 */
+}
+
+.page-links-container a:hover {
+    text-decoration: none; /* 悬停时不显示下划线 */
+}
+
+.link-box{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+.icon{
+    margin-right: 5%;
+    margin-left: 5%;
+}
+.icon img{
+    max-width: 70px;
+    max-height: 70px;
+}
+.text{
+    flex-grow: 1;
+
+    font-size: 15px;
+    /*font-family: "Shadows Into Light", cursive;*/
+    font-family: 'Motley Forces', sans-serif;
+    /*400 - normal/regular --> 700 - bold*/
+    font-weight: 200;
+    font-style: normal;
+}
+.text h3 {
+    margin-top: 0; /* 移除标题上边距 */
+    margin-bottom: 0;
+}
+
+.text p {
+    margin-top: 0; /* 移除段落上边距 */
+    margin-bottom: 0; /* 移除段落下边距 */
 }
 
 /* different screen size change links view */
@@ -217,7 +262,22 @@ header {
 }
 
 @media screen and (max-width: 767px){
-/* TODO: finish small screen */
+    .page-links-container{
+        margin-top: 30px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 50vh;
+    }
+
+    .link-box{
+        width: 75%; /* 长方形宽度 */
+        height: 100px; /* 长方形高度 */
+        background-color: #ffffff; /* 背景颜色 */
+        border-radius: 10px; /* 边框圆角半径 */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* 阴影效果 */
+    }
 }
 
 /*webpage style*/
