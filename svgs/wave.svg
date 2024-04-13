@@ -19,7 +19,7 @@
         <!-- fill控制颜色，渐变则写url(#gradiant) -->
         <!-- use中的opacity控制透明度 -->
         <!-- 越往下写波浪层数越靠前 -->
-        <use href="#wavepath1" y="400" fill="#fff" opacity="0.3">
+        <use href="#wavepath1" y="400" fill="#f7f7f7" opacity="0.3">
             <!-- dur控制速度，数字越小速度越快 -->
             <animateMotion
                     dur="2s"
@@ -28,7 +28,7 @@
             </animateMotion>
         </use>
         <!-- 第二层波浪 -->
-        <use href="#wavepath2" y="400" fill="#fff" opacity="0.5">
+        <use href="#wavepath2" y="400" fill="#f7f7f7" opacity="0.5">
             <animateMotion
                     dur="4s"
                     repeatCount="indefinite">
@@ -36,7 +36,7 @@
             </animateMotion>
         </use>
         <!-- 第三层波浪 -->
-        <use href="#wavepath4" y="400" fill="#fff" opacity="0.7">
+        <use href="#wavepath4" y="400" fill="#f7f7f7" opacity="0.7">
             <animateMotion
                     dur="3s"
                     repeatCount="indefinite">
@@ -44,7 +44,7 @@
             </animateMotion>
         </use>
         <!-- 第四层波浪 -->
-        <use href="#wavepath3" y="400" fill="#fff">
+        <use href="#wavepath3" y="400" fill="#f7f7f7">
             <animateMotion
                     dur="5s"
                     repeatCount="indefinite">

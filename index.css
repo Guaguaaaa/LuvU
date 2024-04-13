@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Covered+By+Your+Grace);
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
 @font-face {
     font-family: 'ZCOOL Happy';
     src: url('fonts/ZCOOLHappy.ttf') format('truetype');
@@ -62,40 +63,37 @@ header {
 .wave{
     position: absolute;
     bottom: 0;
-
     width: 100%;
     height: 400px;
 }
-/*
-.header-wave {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100px;
-    background-image: url('svgs/wave.svg');
-    background-size: 100% 100%;
-    background-repeat: repeat-x;
-    z-index: -1;
-}*/
 
+.container-main-title h1{
+    text-align: center;
+    padding-top: 10px;
+    color: #61bfad;
+
+    font-size:40px;
+    font-family: "Shadows Into Light", cursive;
+    /*400 - normal/regular --> 700 - bold*/
+    font-weight: 700;
+    font-style: normal;
+    /*
+    background: linear-gradient(to right, #ebbba7, #cfc7f8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;*/
+}
 
 /* Timer Section */
 #days {
-    font-size: 130px;
     color: #db4844;
 }
 #hours {
-    font-size: 100px;
     color: #f07c22;
 }
 #minutes {
-    font-size: 60px;
     color: #f6da74;
 }
 #seconds {
-    font-size: 30px;
     color: #abcd58;
 }
 
@@ -106,8 +104,9 @@ header {
 #timer div {
     display: inline-block;
     line-height: 1;
-    padding: 10px;
-    /*font-size: 40px;*/
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 100px;
     font-family: 'Covered By Your Grace', cursive;
     text-align: center;
 }
@@ -120,28 +119,129 @@ header {
     text-align: center;
 }
 
+/*page links*/
+.page-links-container{
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+/* different screen size change links view */
+/* 大屏幕 */
+@media screen and (min-width: 1200px) {
+    .link-box{
+        width: 320px; /* 长方形宽度 */
+        height: 100px; /* 长方形高度 */
+        background-color: #ffffff; /* 背景颜色 */
+        border-radius: 10px; /* 边框圆角半径 */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* 阴影效果 */
+    }
+
+    .link-box:nth-child(1) {
+        position: absolute;
+        left: calc(50% - 320px - 50px);
+        transform: translateX(-50%);
+    }
+
+    .link-box:nth-child(2){
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .link-box:nth-child(3){
+        position: absolute;
+        left: calc(50% + 320px + 50px);
+        transform: translateX(-50%);
+    }
+}
+
+/* 中等屏幕 */
+@media screen and (max-width: 1199px) and (min-width: 1000px) {
+    .link-box{
+        width: 260px; /* 长方形宽度 */
+        height: 100px; /* 长方形高度 */
+        background-color: #ffffff; /* 背景颜色 */
+        border-radius: 10px; /* 边框圆角半径 */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* 阴影效果 */
+    }
+
+    .link-box:nth-child(1) {
+        position: absolute;
+        left: calc(50% - 260px - 50px);
+        transform: translateX(-50%);
+    }
+
+    .link-box:nth-child(2){
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .link-box:nth-child(3){
+        position: absolute;
+        left: calc(50% + 260px + 50px);
+        transform: translateX(-50%);
+    }
+}
+
+/* 小屏幕 */
+@media screen and (max-width: 999px) and (min-width: 768px){
+    .link-box{
+        width: 180px; /* 长方形宽度 */
+        height: 100px; /* 长方形高度 */
+        background-color: #ffffff; /* 背景颜色 */
+        border-radius: 10px; /* 边框圆角半径 */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* 阴影效果 */
+    }
+
+    .link-box:nth-child(1) {
+        position: absolute;
+        left: calc(50% - 180px - 50px);
+        transform: translateX(-50%);
+    }
+
+    .link-box:nth-child(2){
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .link-box:nth-child(3){
+        position: absolute;
+        left: calc(50% + 180px + 50px);
+        transform: translateX(-50%);
+    }
+}
+
+@media screen and (max-width: 767px){
+/* TODO: finish small screen */
+}
+
+/*webpage style*/
 html {
     position: relative;
     min-height: 100%;
 }
 
 body {
-    /* fallback for old browsers */
+    /*
     background: #ebbba7;
-
-    /* Chrome 10-25, Safari 5.1-6 */
     background: -webkit-linear-gradient(
             to right,
             rgba(235, 187, 167, 1),
             rgba(207, 199, 248, 1)
     );
-
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background: linear-gradient(
             to right,
             rgba(235, 187, 167, 1),
             rgba(207, 199, 248, 1)
     );
+    */
+
+    background-color: #f7f7f7;
 
     margin: 0;
     padding-bottom: 100px;
