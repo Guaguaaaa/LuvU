@@ -37,6 +37,7 @@ header {
     justify-content: space-around;
     align-items: center;
     position: relative;
+    padding-top: 55px;
 }
 
 .avatar-container-1 img,
