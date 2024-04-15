@@ -1,3 +1,14 @@
+@keyframes slideDown {
+    from {
+        min-height: 0;
+        max-height: 0;
+    }
+    to {
+        min-height: 200px;
+        max-height: 200px; /* 可根据实际需要调整最大高度 */
+    }
+}
+
 html {
     position: relative;
     min-height: 100%;
@@ -7,6 +18,65 @@ body{
     margin: 0;
     padding-bottom: 100px;
 }
+
+.text-position{
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* 样式可以自行调整 */
+.todo-list {
+    width: 700px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 800px){
+    .todo-list{
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .todo-list{
+        width: 90%;
+    }
+}
+
+.todo-item {
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 10px; /* 边框圆角半径 */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.todo-item p{
+    padding: 10px;
+    margin-bottom: 0;
+}
+
+.todo-details {
+    display: none;
+
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+}
+
+.todo-details.active {
+    display: block;
+    max-height: 200px;
+    min-height: 200px;
+    overflow-y: auto; /* 如果内容超过固定高度，显示滚动条 */
+    opacity: 1;
+    background-color: lightgray;
+
+    animation: slideDown 0.5s ease-out forwards; /* 应用动画 */
+}
+
+
 
 /* Footer section */
 .footer {
