@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
+    <title>Checklist</title>
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link href="about.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/checklist.css">
+
 </head>
 <body>
-
+<!-- Navigation bar -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="index.html">NavLogo</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,44 +24,45 @@
                 <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="gallery.html">Gallery</a>
+                <a class="nav-link" href="gallery.html">Album</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="timeline.html">Timeline</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="checklist.html">Checklist</a>
-            </li>
             <li class="nav-item active">
-                <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#">Wishlist <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
             </li>
         </ul>
     </div>
 </nav>
 
-<div class="responsive-container-block bigContainer">
-    <div class="responsive-container-block Container">
-        <div class="responsive-container-block leftSide">
-            <p class="text-blk heading">
-                About us
-            </p>
-            <p class="text-blk subHeading">
-                Semaj Africa is an online education platform that delivers video courses, programs and resources for Individual, Advertising &amp; Media Specialist, Online Marketing Professionals, Freelancers and anyone looking to pursue a career in digital marketing, Accounting, Web development, Programming. Multimedia and CAD design.
-            </p>
-        </div>
-        <div class="responsive-container-block rightSide">
-            <img class="number1img" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET32.jpg">
-            <img class="number2img" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/d14.png">
-            <img class="number3img" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/b245.png">
-            <img class="number5img" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Customer supports.png">
-            <!--<iframe allowfullscreen="allowfullscreen" class="number4vid" poster="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/b242.png" src="https://www.youtube.com/embed/svg%3E?">
-            </iframe>-->
-            <img class="number4vid" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/b242.png">
-            <img class="number7img" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/d51.png">
-            <img class="number6img" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/d12.png">
+<div class="todo-list">
+    <div class="text-position">
+        <h1>Hello, Checklist!</h1>
+        <p>This is the Checklist page.</p>
+    </div>
+    <div class="todo-item">
+        <p>Testing message ------------------------------------ here</p>
+        <div class="todo-details">
+            <div class="dropdown-content"></div>
         </div>
     </div>
+    <div class="todo-item">
+        <p>Task 2</p>
+        <div class="todo-details"></div>
+    </div>
+    <div class="todo-item">
+        <p>Task 3</p>
+        <div class="todo-details"></div>
+    </div>
 </div>
+
+<!-- script for list dropdown -->
+<script src="../js/checklist.js"></script>
+
 
 <!-- Footer -->
 <footer class="footer">
@@ -75,8 +77,11 @@
     </div>
 </footer>
 
+
+<!-- Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
 </html>

@@ -2,11 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
 @font-face {
     font-family: 'ZCOOL Happy';
-    src: url('fonts/ZCOOLHappy.ttf') format('truetype');
+    src: url('../fonts/ZCOOLHappy.ttf') format('truetype');
 }
 @font-face {
     font-family: 'Motley Forces';
-    src: url('fonts/MotleyForcesRegular.ttf') format('truetype');
+    src: url('../fonts/MotleyForcesRegular.ttf') format('truetype');
 }
 
 .navbar{
@@ -26,7 +26,7 @@
 
 header {
     height: 50vh;
-    background-image: url('photos/test1.jpg');
+    background-image: url('../photos/test1.jpg');
     position: relative;
     z-index: 999; /* 设置 header 的 z-index 值稍低 */
 }
@@ -74,12 +74,12 @@ header {
 }
 
 .heart-img{
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     position: absolute;
     left: 50%;
-    transform: translateX(-50%);
-    margin-bottom: 30px;
+    transform: translateX(-50%) rotate(225deg);
+    margin-bottom: 60px;
 }
 
 .wave{
