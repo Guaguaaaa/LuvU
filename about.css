@@ -346,7 +346,8 @@ body {
             to right,
             rgba(235, 187, 167, 1),
             rgba(207, 199, 248, 1)
-    );    padding: 20px 0; /* Padding top and bottom */
+    );
+    padding: 20px 0; /* Padding top and bottom */
     text-align: center; /* Align text to the center */
 }
 
