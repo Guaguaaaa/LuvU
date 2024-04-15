@@ -66,7 +66,7 @@
     max-width: 1320px;
     align-items: center;
     justify-content: center;
-    margin-top: 80px;
+    margin-top: 50px;
     margin-right: auto;
     margin-bottom: 80px;
     margin-left: auto;
@@ -370,6 +370,15 @@ body {
     color: #333; /* Color of the icons */
 }
 
-.social-icon:hover {
-    color: #007bff; /* Change color on hover */
+.social-icon:nth-child(1):hover{
+    color: #d63384;
+}
+.social-icon:nth-child(2):hover{
+    color: #007bff;
+}
+.social-icon:nth-child(3):hover{
+    color: #007bff;
+}
+.social-icon:nth-child(4):hover{
+    color: #20c997;
 }
