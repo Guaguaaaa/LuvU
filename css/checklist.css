@@ -1,3 +1,7 @@
+@font-face {
+    font-family: 'ZCOOL Happy';
+    src: url('../fonts/ZCOOLHappy.ttf') format('truetype');
+}
 @keyframes slideDown {
     from {
         min-height: 0;
@@ -77,6 +81,7 @@ body{
 
 .list-msg-container{
     display: flex;
+    font-family: 'ZCOOL Happy', sans-serif;;
 }
 
 .todo-img{

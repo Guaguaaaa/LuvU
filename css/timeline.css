@@ -141,6 +141,28 @@ html {
 body{
     margin: 0;
     padding-bottom: 100px;
+    background: #ebbba7;
+    background: -webkit-linear-gradient(
+            to right,
+            rgba(235, 187, 167, 1),
+            rgba(207, 199, 248, 1)
+    );
+    background: linear-gradient(
+            to right,
+            rgba(235, 187, 167, 1),
+            rgba(207, 199, 248, 1)
+    );
+}
+
+.title{
+    width: 700px;
+    margin: 0 auto;
+}
+
+.text-position{
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 40px;
 }
 
 /* Footer section */
