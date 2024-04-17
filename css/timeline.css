@@ -2,6 +2,10 @@
     font-family: 'Motley Forces';
     src: url('../fonts/MotleyForcesRegular.ttf') format('truetype');
 }
+@font-face {
+    font-family: 'ZCOOL Happy';
+    src: url('../fonts/ZCOOLHappy.ttf') format('truetype');
+}
 
 .navbar-brand{
     font-family: "Motley Forces", sans-serif;
@@ -10,6 +14,8 @@
 /* The actual timeline (the vertical ruler) */
 .main-timeline-2 {
     position: relative;
+
+    font-family: 'ZCOOL Happy', sans-serif;
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -180,7 +186,7 @@ body{
 }
 
 .text-position p{
-    font-family: 'Motley Forces', sans-serif;
+    font-family: 'ZCOOL Happy', sans-serif;
     font-weight: 400;
 }
 

@@ -3,6 +3,10 @@
     font-family: 'Motley Forces';
     src: url('../fonts/MotleyForcesRegular.ttf') format('truetype');
 }
+@font-face {
+    font-family: 'ZCOOL Happy';
+    src: url('../fonts/ZCOOLHappy.ttf') format('truetype');
+}
 
 /* General Styling */
 body {
@@ -51,7 +55,7 @@ html{
 }
 
 .text-position p{
-    font-family: 'Motley Forces', sans-serif;
+    font-family: 'ZCOOL Happy', sans-serif;
     font-weight: 400;
 }
 
