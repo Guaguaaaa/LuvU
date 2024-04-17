@@ -39,6 +39,10 @@ body{
     );
 }
 
+.navbar-brand{
+    font-family: "Motley Forces", sans-serif;
+}
+
 .text-position{
     padding-left: 5%;
     padding-right: 5%;

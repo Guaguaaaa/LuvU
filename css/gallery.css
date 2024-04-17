@@ -29,9 +29,14 @@ html{
     min-height: 100%;
 }
 
+.navbar-brand{
+    font-family: "Motley Forces", sans-serif;
+}
+
 .title{
     width: 700px;
     margin: 0 auto;
+    margin-top: 40px;
 }
 
 .text-position{

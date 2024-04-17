@@ -20,15 +20,40 @@
 }
 
 .navbar.navbar-light.bg-light {
-    background-color: rgba(255, 255, 255, 0.3) !important;
+    background-color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.navbar-brand{
+    font-family: "Motley Forces", sans-serif;
 }
 
 
 header {
     height: 50vh;
-    background-image: url('../photos/test1.jpg');
+    /*background-image: url('../photos/test1.jpg');*/
+    background: #ebbba7;
+
+    background: -webkit-linear-gradient(
+            to right,
+            rgba(235, 187, 167, 1),
+            rgba(207, 199, 248, 1)
+    );
+
+    background: linear-gradient(
+            to right,
+            rgba(235, 187, 167, 1),
+            rgba(207, 199, 248, 1)
+    );
+
     position: relative;
     z-index: 999; /* 设置 header 的 z-index 值稍低 */
+}
+
+@media screen and (max-width: 767px){
+    header{
+        background-image: url("../photos/index_top_img.jpg");
+        background-size: cover;
+    }
 }
 
 .top-img-container {
@@ -71,6 +96,11 @@ header {
     position: absolute;
     left: calc(50% + 50px + 100px);
     transform: translateX(-50%);
+}
+
+.name_background{
+    background-color: rgba(255, 192, 203, 0.8); /* 设置背景颜色，这里是半透明黑色 */
+    border-radius: 5px; /* 可选：添加圆角 */
 }
 
 .heart-img{

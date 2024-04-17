@@ -1,6 +1,15 @@
+@font-face {
+    font-family: 'Motley Forces';
+    src: url('../fonts/MotleyForcesRegular.ttf') format('truetype');
+}
+
 /*webpage style*/
 * {
     font-family: Nunito, sans-serif;
+}
+
+.navbar-brand{
+    font-family: "Motley Forces", sans-serif;
 }
 
 .text-blk {

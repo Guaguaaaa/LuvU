@@ -3,6 +3,10 @@
     src: url('../fonts/MotleyForcesRegular.ttf') format('truetype');
 }
 
+.navbar-brand{
+    font-family: "Motley Forces", sans-serif;
+}
+
 /* The actual timeline (the vertical ruler) */
 .main-timeline-2 {
     position: relative;
