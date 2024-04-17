@@ -67,8 +67,28 @@ body{
 }
 
 .todo-item p{
-    padding: 10px;
+    padding-top: 9px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 5px;
     margin-bottom: 0;
+    position: relative;
+}
+
+.list-msg-container{
+    display: flex;
+}
+
+.todo-img{
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    max-width: 30px;
+}
+
+.todo-img-yes{
+    padding: 10px 2px 10px 10px;
+    max-width: 30px;
 }
 
 .todo-details {
