@@ -2,6 +2,10 @@
     font-family: 'ZCOOL Happy';
     src: url('../fonts/ZCOOLHappy.ttf') format('truetype');
 }
+@font-face {
+    font-family: 'Motley Forces';
+    src: url('../fonts/MotleyForcesRegular.ttf') format('truetype');
+}
 @keyframes slideDown {
     from {
         min-height: 0;
@@ -9,7 +13,7 @@
     }
     to {
         min-height: 200px;
-        max-height: 200px; /* 可根据实际需要调整最大高度 */
+        max-height: 200px;
     }
 }
 
@@ -40,6 +44,16 @@ body{
     padding-right: 5%;
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+.text-position h1{
+    font-family: 'Motley Forces', sans-serif;
+    font-weight: 700;
+}
+
+.text-position p{
+    font-family: 'Motley Forces', sans-serif;
+    font-weight: 400;
 }
 
 /* 样式可以自行调整 */

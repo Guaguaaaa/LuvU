@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@font-face {
+    font-family: 'Motley Forces';
+    src: url('../fonts/MotleyForcesRegular.ttf') format('truetype');
+}
+
 /* General Styling */
 body {
     font-family: Arial, sans-serif;
@@ -32,6 +38,16 @@ html{
     padding-left: 5%;
     padding-right: 5%;
     margin-top: 20px;
+}
+
+.text-position h1{
+    font-family: 'Motley Forces', sans-serif;
+    font-weight: 700;
+}
+
+.text-position p{
+    font-family: 'Motley Forces', sans-serif;
+    font-weight: 400;
 }
 
 .gallery .responsive-container-block {
