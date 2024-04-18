@@ -156,6 +156,7 @@
     height: 32%;
     width: 20%;
     position: absolute;
+    object-fit: cover;
 }
 
 .number2img {
@@ -166,6 +167,7 @@
     width: 35%;
     height: 39%;
     position: absolute;
+    object-fit: cover;
 }
 
 .number3img {
@@ -176,6 +178,7 @@
     margin-right: 64%;
     margin-bottom: 30%;
     margin-left: 23%;
+    object-fit: cover;
 }
 
 .number4vid {
@@ -186,6 +189,7 @@
     margin-right: 27%;
     margin-bottom: 0px;
     margin-left: 39%;
+    object-fit: cover;
 }
 
 .number5img {
@@ -196,6 +200,7 @@
     margin-right: 27%;
     margin-bottom: 41%;
     margin-left: 60%;
+    object-fit: cover;
 }
 
 .number6img {
@@ -206,6 +211,7 @@
     margin-left: 62%;
     width: 35%;
     height: 33%;
+    object-fit: cover;
 }
 
 .number7img {
@@ -216,6 +222,7 @@
     margin-bottom: 18%;
     margin-left: 75%;
     height: 42%;
+    object-fit: cover;
 }
 
 .text-blk.subHeading {
