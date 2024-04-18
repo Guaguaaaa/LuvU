@@ -2,10 +2,15 @@
     font-family: 'Motley Forces';
     src: url('../fonts/MotleyForcesRegular.ttf') format('truetype');
 }
+@font-face {
+    font-family: 'ZCOOL Happy';
+    src: url('../fonts/ZCOOLHappy.ttf') format('truetype');
+}
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
 
 /*webpage style*/
 * {
-    font-family: Nunito, sans-serif;
+    font-family: "Shadows Into Light", cursive;
 }
 
 .navbar-brand{
