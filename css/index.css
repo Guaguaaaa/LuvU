@@ -51,11 +51,10 @@ header {
 
 @media screen and (max-width: 767px){
     header {
-        background-image: url("../photos/top_img_fixed.png");
+        background-image: url("../photos/index_top_img.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
-        background-attachment: fixed;
     }
 }
 
