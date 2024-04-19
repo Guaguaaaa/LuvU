@@ -172,6 +172,19 @@ body{
     }
 }
 
+.last-word{
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.last-word p{
+    font-family: 'ZCOOL Happy', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
 
 /* Footer section */
 .footer {
