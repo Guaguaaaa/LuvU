@@ -186,6 +186,7 @@ html{
     }
 }
 
+/* 单列显示
 @media (max-width: 500px) {
     .gallery .project {
         width: 100%;
@@ -193,6 +194,27 @@ html{
         padding-right: 0px;
         padding-bottom: 10px;
         padding-left: 0px;
+    }
+
+    .gallery .responsive-container-block.bigContainer {
+        padding-top: 10px;
+        padding-right: 20px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+    }
+
+    .gallery .overlay-inner {
+        max-width: 90%;
+    }
+}*/
+
+@media (max-width: 500px) {
+    .gallery .project {
+        width: 50%;
+        padding-top: 10px;
+        padding-right: 5px;
+        padding-bottom: 10px;
+        padding-left: 5px;
     }
 
     .gallery .responsive-container-block.bigContainer {

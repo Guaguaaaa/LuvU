@@ -6,13 +6,8 @@
     font-family: 'ZCOOL Happy';
     src: url('../fonts/ZCOOLHappy.ttf') format('truetype');
 }
-@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
 
 /*webpage style*/
-* {
-    font-family: "Shadows Into Light", cursive;
-}
-
 .navbar-brand{
     font-family: "Motley Forces", sans-serif;
 }
@@ -104,6 +99,8 @@
     margin-bottom: 0px;
     margin-left: auto;
     max-width: 300px;
+
+    font-family: 'ZCOOL Happy', sans-serif;
 }
 
 .text-blk.heading {

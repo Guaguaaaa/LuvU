@@ -162,6 +162,16 @@ body{
     padding: 0 0 0 0;
 }
 
+@media screen and (max-width: 767px) {
+    .img-container{
+        max-width: 50%;
+        height: auto;
+    }
+    .todo-details.active {
+        background-color: #f7f7f7;
+    }
+}
+
 
 /* Footer section */
 .footer {
