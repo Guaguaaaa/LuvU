@@ -1,0 +1,121 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body{
+    font-family: Arial, sans-serif;
+
+    margin: 0;
+    padding-bottom: 100px;
+
+    background: #ebbba7;
+    background: -webkit-linear-gradient(
+            to right,
+            rgba(235, 187, 167, 1),
+            rgba(207, 199, 248, 1)
+    );
+    background: linear-gradient(
+            to right,
+            rgba(235, 187, 167, 1),
+            rgba(207, 199, 248, 1)
+    );
+}
+
+
+/* Style for the password container */
+#password-container {
+    margin-top: 50px;
+    text-align: center;
+}
+
+/* Style for the main content */
+#main-content {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.text-content{
+    background-color: white;
+    margin: 0 auto; /* Center horizontally */
+    width: 70%; /* Width can be adjusted as needed */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add some shadow for better visualization */
+    min-height: 200px;
+    border-radius: 10px; /* 边框圆角半径 */
+
+    /* for paragraph */
+    font-size: 15px;
+}
+
+.text-content p{
+    padding: 0 0 0 0;
+    text-align: left;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 600px) {
+    .text-content{
+        width: 90%;
+    }
+}
+
+
+.navbar-brand{
+    font-family: "Motley Forces", sans-serif;
+}
+
+
+/* Footer section */
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px; /* Adjust according to footer height */
+
+    background: #ebbba7;
+    background: -webkit-linear-gradient(
+            to right,
+            rgba(235, 187, 167, 1),
+            rgba(207, 199, 248, 1)
+    );
+    background: linear-gradient(
+            to right,
+            rgba(235, 187, 167, 1),
+            rgba(207, 199, 248, 1)
+    );
+    padding: 20px 0; /* Padding top and bottom */
+    text-align: center; /* Align text to the center */
+}
+
+.footer-content {
+    max-width: 1200px; /* Maximum width for the content */
+    margin: 0 auto; /* Center the content horizontally */
+}
+
+.footer p {
+    margin-bottom: 10px; /* Add some space below the paragraph */
+}
+
+.social-icons {
+    font-size: 24px; /* Size of the social media icons */
+}
+
+.social-icon {
+    display: inline-block; /* Display icons inline */
+    margin: 0 10px; /* Add some space between icons */
+    color: #333; /* Color of the icons */
+}
+
+.social-icon:nth-child(1):hover{
+    color: #e4405f;
+}
+.social-icon:nth-child(2):hover{
+    color: #0077B5;
+}
+.social-icon:nth-child(3):hover{
+    color: #181717;
+}
+.social-icon:nth-child(4):hover{
+    color: #5865F2;
+}
