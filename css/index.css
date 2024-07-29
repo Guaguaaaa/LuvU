@@ -174,6 +174,61 @@ header {
     text-align: center;
 }
 
+/*second timer - breakup timer start*/
+.container-main-title_2 h1{
+    text-align: center;
+    padding-top: 10px;
+    /*color: #61bfad;*/
+
+    font-size:40px;
+    font-family: "Shadows Into Light", cursive;
+    /*400 - normal/regular --> 700 - bold*/
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Timer Section */
+#days_2 {
+    /*color: #db4844;*/
+    color: #1a1d20;
+}
+#hours_2 {
+    /*color: #f07c22;*/
+    color: #1a1d20;
+}
+#minutes_2 {
+    /*color: #f6da74;*/
+    color: #1a1d20;
+}
+#seconds_2 {
+    /*color: #abcd58;*/
+    color: #1a1d20;
+}
+
+.timer-container_2{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#timer_2 div {
+    display: inline-block;
+    line-height: 1;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#timer_2 span {
+    display: block;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    text-align: center;
+}
+/*second timer - breakup timer end*/
+
 @media screen and (max-width: 500px){
     .avatar-container-1{
         position: absolute;
