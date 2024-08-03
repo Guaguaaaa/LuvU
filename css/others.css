@@ -54,6 +54,10 @@ body{
     margin: 0 auto;
 }
 
+.text-space{
+    height: 30px;
+}
+
 @media screen and (max-width: 600px) {
     .text-content{
         width: 90%;

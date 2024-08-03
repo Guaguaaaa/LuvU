@@ -1,5 +1,5 @@
 const startDate = new Date('2023-04-20T20:43:00');
-const endDate = new Date('2024-08-09T12:00:00');
+const endDate = new Date('2024-08-10T12:00:00');
 
 function updateTimer() {
     const currentDate = new Date();
