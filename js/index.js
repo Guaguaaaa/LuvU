@@ -1,5 +1,5 @@
 const startDate = new Date('2023-04-20T20:43:00');
-const endDate = new Date('2024-08-10T12:00:00');
+const endDate = new Date('2024-08-10T22:59:59');
 
 function updateTimer() {
     const currentDate = new Date();
@@ -27,7 +27,7 @@ function updateTimer_2() {
     var minutes_2 = Math.floor((difference_2 % (1000 * 60 * 60)) / (1000 * 60));
     var seconds_2 = Math.floor((difference_2 % (1000 * 60)) / 1000);
 
-    if (hours_2 < "10") { hours_2 = "0" + hours; }
+    if (hours_2 < "10") { hours_2 = "0" + hours_2; }
     if (minutes_2 < "10") { minutes_2 = "0" + minutes_2; }
     if (seconds_2 < "10") { seconds_2 = "0" + seconds_2; }
 
