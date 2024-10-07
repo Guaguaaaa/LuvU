@@ -2,7 +2,10 @@ const startDate = new Date('2023-04-20T20:43:00');
 const endDate = new Date('2024-08-21T23:59:59');
 
 function updateTimer() {
-    const currentDate = new Date();
+    const userDate = new Date();
+    const utcDateString = userDate.toLocaleString("en-US", { timeZone: "UTC" });
+
+    const currentDate = new Date(utcDateString);
     const difference = currentDate - startDate;
     var days = Math.floor(difference / (1000 * 60 * 60 * 24));
     var hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));

@@ -17,8 +17,8 @@ document.addEventListener("DOMContentLoaded", function() {
             passwordContainer.style.display = "none";
             mainContent.style.display = "block";
         } else {
-            errorMessage.textContent = "Incorrect password. Please try again.";
-            hintMessage.textContent = "Hint: 她生日";
+            errorMessage.textContent = "Incorrect password. Developer only";
+            hintMessage.textContent = "Hint: Birthday";
         }
 
         passwordInput.value = ""; // Clear the password field
