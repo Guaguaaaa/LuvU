@@ -180,8 +180,9 @@ header {
     padding-top: 10px;
     /*color: #61bfad;*/
 
-    font-size:40px;
-    font-family: "Shadows Into Light", cursive;
+    font-size:30px;
+    font-family: Arial, Helvetica, sans-serif;
+    /*font-family: "Shadows Into Light", cursive;*/
     /*400 - normal/regular --> 700 - bold*/
     font-weight: 700;
     font-style: normal;
